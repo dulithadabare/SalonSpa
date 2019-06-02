@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Salon</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="bookings">Appointments</string>
+    <string name="category">Category</string>
+    <string name="title_activity_book_now">BookNow</string>
+    <string name="action_settings">Settings</string>
+    <string name="pick_salon"><![CDATA[<font face="FF Strada OT">Pick a <b><font>Salon</b></font></font>]]></string>
+    <string name="pick_service"><![CDATA[<font face="FF Strada OT">Pick a <b><font>Service</b></font></font>]]></string>
+    <string name="pick_date"><![CDATA[<font face="FF Strada OT">Pick a <b><font>Date</b></font></font>]]></string>
+    <string name="pick_stylist"><![CDATA[<font face="FF Strada OT">Pick a <b><font>Stylist</b></font></font>]]></string>
+
+</resources>

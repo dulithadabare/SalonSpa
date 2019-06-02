@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_settings"
+        android:title="@string/menu_settings"
+        android:icon="@drawable/profile"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/menu_profile"
+          android:icon="@drawable/profile"
+          android:title="@string/bookings"
+          android:showAsAction="never" />
+    <item android:id="@+id/back"
+          android:icon="@drawable/back_button"
+          android:title="Back"
+          android:showAsAction="ifRoom" />
+</menu>

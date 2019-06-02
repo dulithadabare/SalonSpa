@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    
+    >
+
+    <EditText
+        android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="Search"
+      >
+      
+    </EditText>
+      <LinearLayout
+        android:id="@+id/linlaHeaderProgress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+     <RelativeLayout
+        android:id="@+id/no_result_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" 
+         >
+<RelativeLayout
+        android:id="@+id/no_result_card_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/card_background"
+        android:layout_centerInParent="true"
+    >
+        <ImageView
+    android:id="@+id/no_result_icon"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="4dp"
+    android:src="@drawable/no_result" />
+    
+    <TextView
+        android:id="@+id/no_result_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/no_result_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:text="Sorry No Search Results Were Found"
+        />
+    </RelativeLayout>
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/listall"
+        android:layout_below="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+       
+        android:listSelector="@drawable/list_selector" />
+
+</RelativeLayout>

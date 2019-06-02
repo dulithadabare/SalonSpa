@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+     >
+     
+ <RelativeLayout
+         android:id="@+id/DateLayout"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+        
+          >
+
+     <TextView
+         android:id="@+id/date_text"
+         android:layout_width="50dp"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="20dp"
+         android:layout_centerVertical="true"
+         android:text="Date"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <View
+         android:layout_width="2dp"
+         android:layout_height="60dp"
+         
+         android:layout_marginTop="5dp"
+         android:layout_centerHorizontal="true"
+        
+         android:background="@android:color/darker_gray" />
+     <LinearLayout
+                    android:id="@+id/date_icon_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                   >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/it_empty_from_date_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="condensed"
+                            android:text="26"
+                            android:textColor="#ffffff"
+                            android:textSize="35dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/it_empty_from_date_ym"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:tag="condensed"
+                                android:text="09/2012"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#F7F7F3"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/it_empty_from_date_day"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:tag="condensed"
+                                android:text="Monday"
+                                android:textColor="#F7F7F3"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+        
+</RelativeLayout>
+
+ <RelativeLayout
+     android:id="@+id/TimeLayout"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal" >
+
+     <TextView
+         android:id="@+id/time_text"
+         android:layout_width="50dp"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="20dp"
+         android:text="Time"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <View
+         android:layout_width="2dp"
+         android:layout_height="60dp"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="5dp"
+         android:background="@android:color/darker_gray" />
+
+
+         <Spinner
+         android:id="@+id/time_spinner"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:layout_marginRight="20dp"
+       />
+     
+
+    
+ </RelativeLayout>
+<TextView
+        android:id="@+id/service_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#3CB6F2"
+        android:text="Pick a Service"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+     <View
+        android:id="@+id/divider3"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/location"
+        android:background="#3CB6F2" />
+ <!--    
+    <CalendarView
+        android:id="@+id/calendarView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:showWeekNumber="false"
+        android:focusedMonthDateColor="#ffffff"
+        android:weekSeparatorLineColor="#0A6CF7"
+         />
+    
+
+    <Button
+        android:id="@+id/pick_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="#F0EEF1"
+        android:background="@drawable/book_button"
+        android:text="Pick this Date" />
+ -->
+
+     <EditText
+         android:id="@+id/search_list"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:ems="10" 
+         android:hint="Search Services..."
+         >
+
+       
+     </EditText>
+     <RelativeLayout
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  >
+     
+      <Button 
+          android:id="@+id/search_button"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:text="Search Salons"
+          android:background="@drawable/date_search_button"
+  />
+
+     <ListView
+         android:id="@+id/service_list"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:layout_above="@id/search_button"
+          >
+     </ListView>
+      <LinearLayout
+        android:id="@+id/linlaHeaderProgress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+    
+     </RelativeLayout>
+     
+    
+ 
+</LinearLayout>

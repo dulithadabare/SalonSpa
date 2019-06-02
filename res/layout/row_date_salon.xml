@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:orientation="horizontal"
+  android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+   
+   >
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    
+   
+   >
+
+	<!--  ListRow Left sied Thumbnail image -->
+	<LinearLayout android:id="@+id/thumbnail" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="3dip"		
+        
+        android:background="@drawable/image_bg" 
+	    android:layout_marginRight="5dip">
+        
+		<ImageView     
+			android:id="@+id/list_image"   
+	        android:layout_width="70dip"
+	        android:layout_height="70dip"
+	        />
+        
+	</LinearLayout>
+   
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Dr: Harischandra"
+        android:textColor="#ffffff"
+        android:typeface="sans" 
+        android:textSize="20dip"
+       />
+
+	
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:textColor="#ffffff"
+        android:textSize="15dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Address" />
+    <TextView
+        android:id="@+id/Cost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Address"
+        android:textColor="#ffffff"
+        android:textSize="12dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Cost  : Rs.1000" />
+
+    <TextView
+        android:id="@+id/BranchID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/Name"
+        android:gravity="right"
+        android:text=""
+        android:layout_marginRight="5dip"
+        android:textSize="10dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+       <TextView
+        android:id="@+id/MapID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text=""
+       />
+      
+     
+     <ImageView android:layout_width="20dp"
+     	android:layout_height="30dp"
+     	android:src="@drawable/anchor"
+     	android:layout_alignParentRight="true"
+     	android:layout_centerVertical="true"/>
+
+</RelativeLayout>
+</RelativeLayout>

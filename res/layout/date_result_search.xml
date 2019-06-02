@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+   android:background="@drawable/new_background">
+
+
+    <FrameLayout
+    android:id="@+id/frame_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    >
+
+    <EditText
+        android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp"
+        android:ems="10"
+        android:background="@drawable/edittext_style"
+        android:hint="Search Services.."
+        android:inputType="textVisiblePassword" >
+        
+        
+    </EditText>
+    
+    <ImageView
+        android:id="@+id/corner_icon"      
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:background="@drawable/corner" />
+    
+     <ImageView
+        android:id="@+id/sort_icon"      
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right|center_vertical" 
+        android:src="@drawable/sort_icon" />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/linlaHeaderProgress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/no_result_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" 
+         >
+<RelativeLayout
+        android:id="@+id/no_result_card_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/card_background"
+        android:layout_centerInParent="true"
+    >
+        <ImageView
+    android:id="@+id/no_result_icon"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="4dp"
+    android:src="@drawable/no_result" />
+    
+    <TextView
+        android:id="@+id/no_result_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/no_result_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:text="Sorry, no Salons found."
+        />
+    </RelativeLayout>
+    </RelativeLayout>
+<RelativeLayout
+
+android:id="@+id/main_panel"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="2dp"
+android:paddingRight="2dp"
+android:paddingBottom="10dp"
+android:paddingTop="10dp"
+android:layout_below="@+id/frame_layout"
+android:layout_marginBottom="5dp"
+android:layout_marginTop="5dp"
+android:layout_marginRight="5dp"
+android:layout_marginLeft="5dp"
+
+>
+<ListView
+        android:id="@+id/listall"
+        
+       
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+      android:divider="@null"
+        
+        android:listSelector="@drawable/list_selector" 
+        />
+  </RelativeLayout> 
+    
+    
+</RelativeLayout>

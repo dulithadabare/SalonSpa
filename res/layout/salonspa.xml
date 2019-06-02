@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_transition" >
+    
+    <RelativeLayout 
+    android:id="@+id/logo_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    >
+    <ImageView
+    android:id="@+id/logo"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:src="@drawable/logo" />
+</RelativeLayout>
+   
+  <LinearLayout 
+    android:id="@+id/search_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/logo_layout"
+    android:orientation="vertical"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="15dp"
+    >
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_view_style"
+        android:iconifiedByDefault="false"
+         >
+    </SearchView>
+</LinearLayout>
+<LinearLayout 
+    android:id="@+id/main_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:background="@drawable/card_background"
+    >
+<RelativeLayout
+    android:id="@+id/salon_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    
+    >
+<ImageView
+    android:id="@+id/salon_icon"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="22dp"
+    android:src="@drawable/home" />
+    
+    <TextView
+        android:id="@+id/salon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/salon_icon"
+        android:fontFamily="FF Strada OT"
+        android:text="Pick a Salon"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/service_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    
+    >
+<ImageView
+    android:id="@+id/service_icon"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="22dp"
+    android:src="@drawable/scissor" />
+
+<TextView
+        android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/service_icon"
+        android:fontFamily="FF Strada OT"
+        android:text="Pick a Service"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/stylist_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    >
+<ImageView
+    android:id="@+id/stylist_icon"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="22dp"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:src="@drawable/user" />
+
+<TextView
+        android:id="@+id/stylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/stylist_icon"
+        android:fontFamily="FF Strada OT"
+        android:text="Pick a Stylist"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/date_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    >
+
+<ImageView
+    android:id="@+id/date_icon"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="22dp"
+    android:layout_marginBottom="20dp"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:src="@drawable/calendar" />
+
+<TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/date_icon"
+        android:fontFamily="FF Strada OT"
+        android:text="Pick a Date"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+
+<!--  
+<com.example.salon.TransparentPanel
+
+android:id="@+id/transparent_panel2"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingLeft="5dp"
+android:paddingTop="5dp"
+android:paddingRight="5dp"
+android:paddingBottom="5dp"
+android:layout_marginTop="20dp"
+android:layout_below="@+id/transparent_panel"
+android:layout_marginRight="20dp"
+android:layout_marginLeft="20dp"
+
+>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Pick a Salon"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</com.example.salon.TransparentPanel>
+<com.example.salon.TransparentPanel
+
+android:id="@+id/transparent_panel3"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingLeft="5dp"
+android:paddingTop="5dp"
+android:paddingRight="5dp"
+android:paddingBottom="5dp"
+android:layout_marginTop="20dp"
+android:layout_below="@+id/transparent_panel2"
+android:layout_marginRight="20dp"
+android:layout_marginLeft="20dp"
+
+>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Pick a Stylist"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</com.example.salon.TransparentPanel>
+<com.example.salon.TransparentPanel
+
+android:id="@+id/transparent_panel4"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingLeft="5dp"
+android:paddingTop="5dp"
+android:paddingRight="5dp"
+android:paddingBottom="5dp"
+android:layout_marginTop="20dp"
+android:layout_below="@+id/transparent_panel3"
+android:layout_marginRight="20dp"
+android:layout_marginLeft="20dp"
+
+>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Pick a Date"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</com.example.salon.TransparentPanel>
+-->
+
+</RelativeLayout>

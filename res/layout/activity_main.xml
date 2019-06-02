@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/app_background"
+    >
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+    </SearchView>
+
+    <CalendarView
+        android:id="@+id/cal"
+     
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/inputSearch"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:background="#ffffff"
+        />
+    
+
+  <TextView
+        android:id="@+id/notice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to SalonSpa" 
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"/>
+  
+    <Button
+        android:id="@+id/book"
+        style="@style/ButtonText"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/roundedbutton"
+        android:text="Book"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/inputSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Search Stylist.."
+        android:inputType="textVisiblePassword" >
+        
+    </EditText>
+
+    <Button
+        android:id="@+id/service"
+        style="@style/ButtonText"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/book"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Service" />
+    <ImageView
+        android:id="@+id/back_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/inputSearch"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/back_button" />
+    <ImageView
+        android:id="@+id/back_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/inputSearch"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/back_left" 
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/date"
+        style="@style/ButtonText"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/book"
+        android:background="@drawable/roundedbutton"
+        android:text="Date" />
+
+    <Button
+        android:id="@+id/salon"
+        style="@style/ButtonText"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/service"
+        android:layout_below="@+id/book"
+        android:background="@drawable/roundedbutton"
+        android:text="Salon" />
+
+    <Button
+        android:id="@+id/stylist"
+        style="@style/ButtonText"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/book"
+        android:background="@drawable/roundedbutton"
+        android:text="Stylist" />
+    <ListView
+        android:id="@+id/listall"
+        android:layout_below="@+id/inputSearch"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" />
+    
+</RelativeLayout>

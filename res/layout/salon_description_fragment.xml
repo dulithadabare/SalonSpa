@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+     >
+     <ScrollView
+ android:id="@+id/mainScrollView"         
+ android:layout_width="fill_parent" 
+ android:layout_height="wrap_content"
+ android:layout_below="@+id/SalonPicLayout"
+>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+<LinearLayout
+     android:id="@+id/SalonDesLayout"
+     android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/card_background">
+    
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3CB6F2"
+        android:text="Description"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+     <View
+        android:id="@+id/divider1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/service_title2"
+        android:background="#3CB6F2" />
+    
+    <TextView
+        android:id="@+id/SalonDes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="4dp"
+         android:textColor="#ffffff"
+        android:text="Lorem ipsum dolor sit amet, consectetue ut laoreet dolore magna aliquasuscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis el" />
+</LinearLayout>    
+<LinearLayout
+     android:id="@+id/SalonContactLayout"
+     android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/SalonDesLayout"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/card_background">
+    
+    <TextView
+        android:id="@+id/telephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3CB6F2"
+        android:text="Telephone"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+     <View
+        android:id="@+id/divider2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/telephone"
+        android:background="#3CB6F2" />
+    
+    <TextView
+        android:id="@+id/tele_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="4dp"
+         android:textColor="#ffffff"
+       android:autoLink="all"
+        android:phoneNumber="true"
+        android:text="0777200824" />
+    
+     <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#3CB6F2"
+        android:text="Location"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+     <View
+        android:id="@+id/divider3"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/location"
+        android:background="#3CB6F2" />
+     <RelativeLayout
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        
+          >
+     <TextView
+        android:id="@+id/address"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="8dp"
+         android:layout_marginRight="15dp"
+       android:paddingRight="15dp"
+         android:textColor="#ffffff"
+         android:textSize="15sp"
+        android:text="N0:69, Brayrooke Place,Colombo 02" />
+     <View
+    android:layout_width="1dp"
+    android:layout_height="30dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_toLeftOf="@+id/map_icon"
+    android:background="@android:color/darker_gray"/>
+     
+     <ImageView 
+         android:id="@+id/map_icon"
+        android:layout_width="30dp"
+     	android:layout_height="30dp"
+     	 android:layout_marginRight="8dp"
+     	android:src="@drawable/map"
+     	android:layout_alignParentRight="true"
+     	android:layout_marginTop="8dp"
+     	/>
+     </RelativeLayout>
+     
+</LinearLayout>    
+</RelativeLayout>
+</ScrollView>
+
+<LinearLayout
+     android:id="@+id/SalonPicLayout"
+     android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/card_background">
+      <QuickContactBadge
+        android:id="@+id/salon_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/salon_logo" />
+      
+      
+    <TextView
+        android:id="@+id/salonNAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:text="Ramani Fernando "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+      
+
+    <Button
+        android:id="@+id/book_salon"
+        android:textColor="#F0EEF1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/book_button"
+        android:text="Make Appointment" />
+    
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linlaHeaderProgress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+
+</RelativeLayout>

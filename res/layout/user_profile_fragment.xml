@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+  
+<!-- 
+    <TextView
+        android:id="@+id/next_appointment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="14dp"
+        android:text="Next Appointment"
+        android:textColor="#3CB6F2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+      <View
+        android:id="@+id/divider1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/next_appointment_title"
+        android:background="#3CB6F2" />
+
+    <RelativeLayout
+        android:id="@+id/next_appointment_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider1"
+        android:layout_marginTop="8dp" 
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/card_background"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+
+
+        <LinearLayout
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/image_bg"
+            android:padding="3dip" >
+
+            <ImageView
+                android:id="@+id/list_image"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:src="@drawable/salon_logo" />
+        </LinearLayout>
+
+        
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="Hair Treatment"
+            android:textColor="#ffffff"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        
+
+        <TextView
+            android:id="@+id/Discription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_marginTop="1dip"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="At Ramani Salon 9.00 a.m with Charith"
+            android:textColor="#ffffff"
+            android:textSize="10dip" />
+
+        
+
+
+        
+
+    </RelativeLayout>
+     -->
+    <LinearLayout
+        android:id="@+id/linlaHeaderProgress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/no_result_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" 
+         >
+     <RelativeLayout
+        android:id="@+id/no_result_card_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/card_background"
+        android:layout_centerInParent="true"
+    >
+        <ImageView
+    android:id="@+id/no_result_icon"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="4dp"
+    android:src="@drawable/no_result" />
+    
+    <TextView
+        android:id="@+id/no_result_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/no_result_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:text="No upcoming appointments."
+        />
+    </RelativeLayout>
+    </RelativeLayout>
+<!-- 
+    <TextView
+        android:id="@+id/upcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/next_appointment_layout"
+        android:layout_marginTop="7dp"
+        android:textSize="17dp"
+        android:textColor="#3CB6F2"
+        android:text="Upcoming Appointments" />
+    
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/upcoming"
+        android:background="#3CB6F2" />
+ -->
+    <ListView
+        android:id="@+id/listall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp" 
+        android:listSelector="@drawable/list_selector">
+    </ListView>
+
+</RelativeLayout>
